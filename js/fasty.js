@@ -40,7 +40,7 @@
 			$fSlidesNumber++;
 		}
 		//Settling container's height based on main slide height
-		$(this).css('height', $('.fasty_central').css('height'));
+		//$(this).css('height', $('.fasty_central').css('height'));
 		//Hide other slides on init
 		$(this).find('.fasty__slide').each(function(){
 			if ( !$(this).hasClass('fasty_visible') ) {
