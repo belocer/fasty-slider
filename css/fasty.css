@@ -8,30 +8,29 @@
   width: auto;
   height: auto;
   position: absolute;
+  cursor: pointer;
   left: 50%;
   -webkit-transition: -webkit-transform 0.8s;
-          transition: transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
 }
 .fasty_left {
   -webkit-transform: translateX(-90%) scale(0.8);
-      -ms-transform: translateX(-90%) scale(0.8);
           transform: translateX(-90%) scale(0.8);
   z-index: 1;
 }
 .fasty_central {
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 2;
 }
 .fasty_right {
   -webkit-transform: translateX(-10%) scale(0.8);
-      -ms-transform: translateX(-10%) scale(0.8);
           transform: translateX(-10%) scale(0.8);
   z-index: 1;
 }
 .fasty_toLeft {
   -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
