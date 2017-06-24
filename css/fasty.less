@@ -1,0 +1,45 @@
+//temprary
+// .fasty__slide {
+// 	&[data-fasty-number='1'] {background-image: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/pool_table.png);
+// 	}
+// 	&[data-fasty-number='2'] {
+// 		background-image: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/rubber_grip.png);
+// 	}
+// 	&[data-fasty-number='3'] {
+// 		background-image: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/tex2res4.png);
+// 	}
+// 	&[data-fasty-number='4'] {
+// 		background-image: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/tex2res4.png);
+// 		background-color: pink;
+// 	}
+// }
+.fasty {
+	width: 100%;
+	height: 600px;
+	// background-color: #aeaeae;
+	position: relative;
+	overflow: hidden;
+}
+.fasty__slide {
+	// background-color: purple;
+	width: auto;
+	height: auto;
+	position: absolute;
+	left:50%;
+	transition: transform 0.8s; // <=== Animation speed
+}
+.fasty_left {
+	transform: translateX(-90%) scale(0.8);
+	z-index: 1;
+}
+.fasty_central {
+	transform: translateX(-50%);
+	z-index: 2;
+}
+.fasty_right {
+	transform: translateX(-10%) scale(0.8);
+	z-index: 1;
+}
+.fasty_toLeft {
+	transform: translateX(-100%);
+}
